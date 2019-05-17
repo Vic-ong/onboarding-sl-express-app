@@ -1,0 +1,15 @@
+{
+  "name": "onboarding-sl-express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sl-express start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shopline/sl-express": "^2.1.3"
+  }
+}
