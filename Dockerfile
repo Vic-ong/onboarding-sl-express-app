@@ -6,7 +6,7 @@ COPY package.json $APP_DIR/package.json
 
 RUN cd $APP_DIR \
     && npm install \
-    && npm install -g forever \
+    && npm install -g forever
 
 COPY . $APP_DIR
 
