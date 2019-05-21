@@ -1,5 +1,8 @@
 module.exports = {
     plugins: [
-        'logger'
+        'logger',
+        'mongoose',
+        // 'redis',
+        // 'messageQueue'
     ],
 }
