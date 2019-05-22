@@ -8,6 +8,9 @@ services:
         volumes:
             - .:/app
             - /app/node_modules
+        environment:
+            - APP_ROLE=PUBLISHER
+            - CONSUMER_QUEUE_ID=default
         command: bash -c "chmod +x ./wait-for-it.sh && ./wait-for-it.sh rabbitmq:5672 -- forever -a -o /tmp/out.log -e /tmp/err.log --watch --watchDirectory ./api node_modules/@shopline/sl-express/lib/server.js"
 
     mongo:
