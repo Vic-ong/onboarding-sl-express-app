@@ -1,18 +1,12 @@
 module.exports = {
+    preMiddlewares: ['* requestLog requestParseURLEncoded requestParseBody'],
 
-    preMiddlewares: [
-      '* requestLog requestParseURLEncoded requestParseBody'
-    ],
-  
     routes: [
-  
-      'GET / PublicController.index',
-      'GET /helloworld PublicController.helloworld'
-  
+        'GET / PublicController.index',
+        'GET /helloworld PublicController.helloworld',
+
+        'GET /users UserController.users'
     ],
-  
+
     postMiddlewares: []
-  
-  
-  }
-  
+};
